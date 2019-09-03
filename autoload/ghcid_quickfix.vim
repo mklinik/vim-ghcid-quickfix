@@ -37,7 +37,7 @@ endfunction
 
 " Make a already existent or ne quickfix buffer.
 function! s:make_a_ghcid_quickfix_buffer() abort
-  copen
+  botright copen
   setf ghcid_quickfix
   let qf_bufnr = winbufnr('.')
   cclose  " At here, we don't want to open the quickfix window

@@ -16,7 +16,7 @@ function! ghcid_quickfix#event_hooks#quickfix_on_error#new(qf_bufnr) abort
       cclose
       call s:notify_all_good()
     elseif ghcid_quickfix#lines#match_error(a:line)
-      copen
+      botright copen
       wincmd p
     endif
   endfunction

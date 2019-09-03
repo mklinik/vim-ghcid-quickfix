@@ -12,7 +12,7 @@ function! ghcid_quickfix#event_hooks#quickfix_on_start#new(qf_bufnr) abort
   \ }
 
   function! instance.on_quickfix_buffer_created() abort dict
-    copen
+    botright copen
     echomsg 'ghcid-quickfix started.'
   endfunction
 
